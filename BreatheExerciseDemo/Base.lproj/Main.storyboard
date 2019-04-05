@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BreatheExerciseDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x6N-5k-p8b" customClass="XIBView" customModule="BreatheExerciseDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="223.66666666666663" width="375" height="375"/>
+                                <color key="backgroundColor" white="1" alpha="0.19426716549295775" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="x6N-5k-p8b" secondAttribute="height" multiplier="1:1" id="0tO-FA-wr1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="nibName" value="BreatheView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.52156862749999999" blue="0.46666666670000001" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="x6N-5k-p8b" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="9V3-7R-Fp2"/>
+                            <constraint firstItem="x6N-5k-p8b" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Hcq-oH-ydv"/>
+                            <constraint firstItem="x6N-5k-p8b" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="f31-pn-kMT"/>
+                            <constraint firstItem="x6N-5k-p8b" firstAttribute="height" secondItem="6Tk-OE-BBY" secondAttribute="height" id="wRK-AA-F7R"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9V3-7R-Fp2"/>
+                                <exclude reference="wRK-AA-F7R"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="wRK-AA-F7R"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="9V3-7R-Fp2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="breatheViewContainer" destination="x6N-5k-p8b" id="Y3s-WW-PNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
